@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Merilz</title>
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@600&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+
+  body, html {
+    width: 100%;
+    height: 2000px;
+  }
+
+  body {
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+  }
+
+  header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    margin-bottom: 5vh;
+  }
+
+  header #logo {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suex One', serif;
+  }
+
+  @media (min-width: 701px) {
+    #logo {
+      float: left;
+      width: 30%;
+      font-size: 1.1em;
+    }
+
+    #about {
+      float: left;
+      width: 67%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    #logo {
+      margin-top: 15px;
+      width: 100%;
+      font-size: 1.5em;
+    }
+
+  #about {
+    float: right;
+    width: 100%;
+  }
+  }
+
+  #about {
+    text-align: center;
+    font-size: lem;
+    line-height: 40px;
+    margin-bottom: 10 px;
+  }
+
+  #about > a {color: #fff}
+
+  #about > a:hover {
+    color:#b0b0b0;
+    text-decoration: underline;
+  }
+
+  #about > a:not(:las-child) {
+    margin-right: 7%;
+  }
+
+  .fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+  }
+
+  header.fixed #logo {
+    color: #343434
+  }
+
+  .fixed #about a {color: #343434}
+  .fixed #about a:hover {color: #7c7c7c}
+
+  #top {
+    height: 1000px;
+    width: 100%;
+    background-image: url(https://miro.medium.com/max/1400/1*gSnGIxtVLRDhnW9dZ640Fg.jpeg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+  }
+
+  #top h1 {
+    padding-top: 20%;
+  }
+
+  #main {
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848
+    font-size: 1.3em;
+  }
+
+  @media (min-width: 1401px) {
+    #main {
+      padding: 100px 20%;
+      width: 60%;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    #main {
+      padding: 100px 10%;
+      width: 80%;
+    }
+  }
+
+  @media(max-width: 700px) {
+    #main div {
+      width: 98%!important;
+    }
+  }
+
+  #main div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+  }
+
+  #main h2 {font-size: 3em}
+  #main span {color: #a0a0a0}
+
+  #overview {
+    float: center;
+    background-image: url();
+
+    background-blend-mode: multiply;
+    background-color: #f6f6f6;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  #overview .img {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+  }
+
+  #overview .img:nth-child(odd) {
+    margin-left: 18%;
+  }
+
+  #overview img {
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    min-height: 350px;
+    max-width: 350px;
+  }
+  #overview span {
+    color: #000;
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 700px) {
+    #overview .img {
+      width: 80%!important;
+      margin-right: 0!important;
+      margin-left: 10%!important;
+    }
+  }
+
+  #contacts {
+    background-color #fff;
+    border-top: 2px dashed #e4e3e3;
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  #contacts div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+  }
+
+  #contacts .title {
+    font-weight: lighter;
+    color: #a3a0ad;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+  }
+
+  #contacts .heading {
+    color: #7d7d7d;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  #projects {
+    background-color #fff;
+    border-top: 2px dashed #e4e3e3;
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  #projects span {
+    color: #000;
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+  }
+
+  </style>
+</head>
+<body>
+    <header>
+      <div id="logo" onclick="AnimationSite('#head')">
+        <span>Merilz</span>
+      </div>
+      <div id="about">
+        <a href="#" onclick="AnimationSite('#contacts')">Контакты</a>
+        <a href="#" onclick="AnimationSite('#projects')">Проекты</a>
+      </div>
+    </header>
+    <div id="top">
+        <h1>Hello World!</h1>
+    </div>
+
+    <div id="main">
+      <div class = "intro">
+        <h2>Всем привет!</h2>
+        <span>Меня зовут Илья и я учусь программированию</span>
+        </div>
+        <div class="text">
+          <span>Мне очень нравится программировать. Мой самый любимый язык программирования это Rust. Так же я иногда работаю в Unity. Немного знаю html, css и JavaScript</span>
+        </div>
+        </div>
+
+        <div id="overview">
+        <div class="img">
+          <img src="https://cdn.hackernoon.com/images/bFFEe4dIUoXgbouiLfgW9PI9b8q1-60j3152.jpeg" alt="">
+          <span>Rust</span>
+        </div>
+        <div class="img">
+          <img src="https://trashbox.ru/files/213354_e92b48/c267d1165298a28744f04f958ce04d2c.jpg" alt="">
+          <span>Unity</span>
+        </div>
+        <div class="img">
+          <img src="https://webdev.feodosea.ru/assets/img/w3c.webp" alt="">
+          <span>HTML+CSS+JS</span>
+        </div>
+        <div class="img">
+          <img src="https://avatars.mds.yandex.net/get-zen_doc/3023531/pub_5ecb0b17f66e3c72366a690e_5ecfa44877594c210d3eee3f/scale_1200" alt="">
+          <span>Java</span>
+        </div>
+        </div>
+
+        <div id="contacts">
+          <div>
+            <span class="title">Контакты</span><br>
+            <p>Вконтакте:</p>
+            <p>GitHub</p>
+          </div>
+          </div>
+
+        <div id="projects">
+          <center><span>У меня пока нет больших проектов, кроме этого сайта. Но я надеюсь, что их будет очень много!</span></center>
+          </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function AnimationSite(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+      $("header").removeClass("fixed");
+      else
+      $("header").attr("class", "fixed");
+    });
+</script>
+</body>
+</html>
